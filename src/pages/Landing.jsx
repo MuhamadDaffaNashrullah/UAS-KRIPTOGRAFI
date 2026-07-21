@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from '../components/shared/Navbar';
+import Footer from '../components/shared/Footer';
 
 const modules = [
   {
@@ -146,11 +147,11 @@ function AlgoCard({ module, index }) {
 
 export default function Landing() {
   return (
-    <div className="min-h-screen" style={{ background: '#080d19' }}>
+    <div className="min-h-screen flex flex-col" style={{ background: '#080d19' }}>
       <Navbar accentColor="#00d2ff" />
 
       {/* Hero Section */}
-      <section className="nb-container pt-20 pb-16 md:py-24 text-white">
+      <section className="nb-container pt-20 pb-16 md:py-24 text-white flex-grow">
         <motion.div
           initial={{ opacity: 0, y: -24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -262,6 +263,7 @@ export default function Landing() {
           </div>
         </motion.div>
       </section>
+      <Footer />
     </div>
   );
 }
