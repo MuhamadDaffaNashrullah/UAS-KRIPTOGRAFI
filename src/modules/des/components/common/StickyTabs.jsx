@@ -19,7 +19,7 @@ export function StickyTabs({
         ${className}
       `}
     >
-      <div className="font-mono text-xs font-black uppercase text-black/50 border-r-2 border-black/20 pr-4 mr-2 hidden sm:inline">
+      <div className="font-mono text-xs font-black uppercase text-white/50 border-r-2 border-black/20 pr-4 mr-2 hidden sm:inline">
         Sim Step:
       </div>
       <div className="flex items-center gap-3">
@@ -34,7 +34,7 @@ export function StickyTabs({
                 transition-all duration-75 select-none
                 ${isActive 
                   ? 'bg-brutal-yellow translate-y-0.5 shadow-none text-black font-extrabold' 
-                  : 'bg-brutal-white shadow-brutal-sm hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-brutal hover:bg-brutal-cream text-black/70 hover:text-black'}
+                  : 'bg-brutal-white shadow-brutal-sm hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-brutal hover:bg-brutal-cream text-white/70 hover:text-white'}
               `}
               style={{ borderRadius: '0px' }}
             >

@@ -20,26 +20,26 @@ export function PermutationVisualizer({
   const bgClasses = {
     purple: {
       active: 'bg-brutal-purple text-black font-black scale-105 border-black',
-      dim: 'bg-brutal-white text-black/40 border-black/20',
-      normal: 'bg-brutal-white text-black border-black',
+      dim: 'bg-brutal-white text-white/40 border-black/20',
+      normal: 'bg-brutal-white text-white border-black',
       header: 'bg-brutal-purple/15 border-brutal-purple'
     },
     orange: {
       active: 'bg-brutal-orange text-black font-black scale-105 border-black',
-      dim: 'bg-brutal-white text-black/40 border-black/20',
-      normal: 'bg-brutal-white text-black border-black',
+      dim: 'bg-brutal-white text-white/40 border-black/20',
+      normal: 'bg-brutal-white text-white border-black',
       header: 'bg-brutal-orange/15 border-brutal-orange'
     },
     green: {
       active: 'bg-brutal-green text-black font-black scale-105 border-black',
-      dim: 'bg-brutal-white text-black/40 border-black/20',
-      normal: 'bg-brutal-white text-black border-black',
+      dim: 'bg-brutal-white text-white/40 border-black/20',
+      normal: 'bg-brutal-white text-white border-black',
       header: 'bg-brutal-green/15 border-brutal-green'
     },
     yellow: {
       active: 'bg-brutal-yellow text-black font-black scale-105 border-black',
-      dim: 'bg-brutal-white text-black/40 border-black/20',
-      normal: 'bg-brutal-white text-black border-black',
+      dim: 'bg-brutal-white text-white/40 border-black/20',
+      normal: 'bg-brutal-white text-white border-black',
       header: 'bg-brutal-yellow/15 border-brutal-yellow'
     }
   };
@@ -98,7 +98,7 @@ export function PermutationVisualizer({
             );
           })}
         </div>
-        <p className="text-[10px] font-mono text-black/40 mt-3 text-center uppercase">
+        <p className="text-[10px] font-mono text-white/40 mt-3 text-center uppercase">
           Hover over cells to trace bit pathways
         </p>
       </div>
@@ -137,7 +137,7 @@ export function PermutationVisualizer({
             );
           })}
         </div>
-        <p className="text-[10px] font-mono text-black/40 mt-3 text-center uppercase">
+        <p className="text-[10px] font-mono text-white/40 mt-3 text-center uppercase">
           Numbers show original 64-bit input index
         </p>
       </div>

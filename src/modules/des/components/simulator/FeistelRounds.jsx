@@ -33,7 +33,7 @@ export function FeistelRounds() {
   if (!result) {
     return (
       <NeoCard title="PIPELINE PUTARAN FEISTEL (1-16)" className="opacity-50">
-        <div className="flex flex-col items-center justify-center py-12 text-black/40">
+        <div className="flex flex-col items-center justify-center py-12 text-white/40">
           <Cpu className="w-12 h-12 stroke-[3px] mb-4" />
           <p className="font-grotesk font-bold uppercase tracking-wider">
             Jalankan simulasi untuk menghasilkan Putaran Feistel
@@ -81,7 +81,7 @@ export function FeistelRounds() {
                   <button
                     key={speed}
                     onClick={() => setAutoplaySpeed(speed)}
-                    className={`px-3 py-1 font-bold transition-colors ${autoplaySpeed === speed ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-black/40'}`}
+                    className={`px-3 py-1 font-bold transition-colors ${autoplaySpeed === speed ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-white/40'}`}
                   >
                     {speed}ms
                   </button>
@@ -92,7 +92,7 @@ export function FeistelRounds() {
 
           {/* 16 Round select buttons */}
           <div className="flex flex-col gap-2">
-            <div className="text-[10px] font-mono font-bold text-black/50 uppercase">
+            <div className="text-[10px] font-mono font-bold text-white/50 uppercase">
               Loncat langsung ke Putaran Feistel tertentu
             </div>
             
@@ -127,7 +127,7 @@ export function FeistelRounds() {
               <span className="hidden sm:inline">PUTARAN SEBELUMNYA</span>
             </NeoButton>
             
-            <div className="font-grotesk font-black text-sm sm:text-lg text-black uppercase select-none">
+            <div className="font-grotesk font-black text-sm sm:text-lg text-white uppercase select-none">
               PUTARAN {currentRound.toString().padStart(2, '0')} / 16
             </div>
 

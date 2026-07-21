@@ -44,7 +44,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen" style={{ background: '#F0F8FF', color: '#111111' }}>
+      <div className="min-h-screen" style={{ background: '#080d19', color: '#ffffff' }}>
         <AppRoutes />
       </div>
     </BrowserRouter>

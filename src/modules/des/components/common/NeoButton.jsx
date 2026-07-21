@@ -17,20 +17,20 @@ export function NeoButton({
 }) {
   // Mapping variant background colors
   const bgColors = {
-    yellow: 'bg-brutal-yellow hover:bg-yellow-400',
-    purple: 'bg-brutal-purple hover:bg-purple-400',
-    orange: 'bg-brutal-orange hover:bg-orange-400',
-    green: 'bg-brutal-green hover:bg-green-400',
-    coral: 'bg-brutal-coral hover:bg-red-400',
-    cream: 'bg-brutal-cream hover:bg-brutal-surface',
-    surface: 'bg-brutal-surface hover:bg-gray-300',
-    white: 'bg-brutal-white hover:bg-gray-100',
+    yellow: 'bg-brutal-yellow text-[#080d19] hover:bg-yellow-400',
+    purple: 'bg-brutal-purple text-[#080d19] hover:bg-purple-400',
+    orange: 'bg-brutal-orange text-white hover:bg-orange-400',
+    green: 'bg-brutal-green text-[#080d19] hover:bg-green-400',
+    coral: 'bg-brutal-coral text-white hover:bg-red-400',
+    cream: 'bg-brutal-cream text-white hover:bg-brutal-surface',
+    surface: 'bg-brutal-surface text-white hover:bg-gray-700',
+    white: 'bg-brutal-white text-white hover:bg-gray-800',
     black: 'bg-brutal-black text-brutal-white hover:bg-neutral-800',
   };
 
   const selectedBg = active 
     ? bgColors[variant] 
-    : variant === 'black' ? bgColors.black : 'bg-brutal-white hover:bg-neutral-100';
+    : bgColors[variant] || bgColors.yellow;
 
   const borderClass = variant === 'black' ? 'border-brutal-white' : 'border-brutal-black';
 

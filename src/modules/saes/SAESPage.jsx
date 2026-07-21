@@ -55,12 +55,12 @@ function SAESHeroSection() {
   }, [displayedText, isDeleting, currentPhraseIndex, isTransitioning]);
 
   return (
-    <section className="relative w-full py-8 md:py-12 border-b-4 border-black bg-[#FFEBF7] overflow-hidden px-6 md:px-12 select-none">
+    <section className="relative w-full py-8 md:py-12 border-b-4 border-[#00d2ff] bg-[#111a2e] overflow-hidden px-6 md:px-12 select-none text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-12">
         <div className="flex-1 max-w-2xl">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="nb-badge animate-pulse" style={{ background: '#228BE6' }}>S-AES</span>
-            <span className="nb-badge bg-white">Tugas UAS • Sem 6</span>
+            <span className="nb-badge animate-pulse text-black" style={{ background: '#00d2ff', borderColor: '#00d2ff' }}>S-AES</span>
+            <span className="nb-badge bg-[#080d19] text-white border-[#00d2ff] shadow-none">Tugas UAS • Sem 6</span>
           </div>
           <AnimatePresence mode="wait">
             <motion.h2
@@ -69,15 +69,15 @@ function SAESHeroSection() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="font-display font-black text-5xl sm:text-7xl lg:text-8xl leading-[0.9] tracking-tighter uppercase text-black whitespace-pre-line min-h-[2.1em]"
+              className="font-display font-black text-5xl sm:text-7xl lg:text-8xl leading-[0.9] tracking-tighter uppercase text-white whitespace-pre-line min-h-[2.1em]"
             >
               {displayedText}
               {!isTransitioning && (
-                <span className="inline-block w-1 h-[0.9em] bg-black ml-1 animate-pulse align-middle"></span>
+                <span className="inline-block w-1 h-[0.9em] bg-white ml-1 animate-pulse align-middle"></span>
               )}
             </motion.h2>
           </AnimatePresence>
-          <p className="font-display font-extrabold text-xs sm:text-sm text-black/70 mt-3 max-w-xl uppercase">
+          <p className="font-display font-extrabold text-xs sm:text-sm text-white/70 mt-3 max-w-xl uppercase">
             Simulator Interaktif S-AES — Visualisasi Key Expansion (w0-w5), Putaran Awal (AddRoundKey), SubNibbles, ShiftRows, MixColumns, dan Dekripsi Invers.
           </p>
         </div>
@@ -86,9 +86,9 @@ function SAESHeroSection() {
         {/* Badges */}
         <div className="flex flex-wrap gap-4 items-center md:flex-col md:items-end flex-shrink-0">
           {[
-            ['2 ROUNDS', '#228BE6'],
+            ['2 ROUNDS', '#00d2ff'],
             ['16-BIT BLOCK', '#FFFFFF'],
-            ['16-BIT KEY', '#4DABF7']
+            ['16-BIT KEY', '#3b82f6']
           ].map(([txt, bg], i) => (
             <motion.div
               key={txt}
@@ -96,8 +96,8 @@ function SAESHeroSection() {
               animate={{ scale: 1, rotate: i % 2 === 0 ? -2 : 3 }}
               whileHover={{ scale: 1.1, rotate: 0, y: -4 }}
               transition={{ type: 'spring', stiffness: 220, damping: 10, delay: i * 0.05 }}
-              className="text-black border-[3px] border-black px-4 py-2 font-display font-black text-xs sm:text-sm uppercase shadow-sm select-none cursor-pointer"
-              style={{ background: bg, borderRadius: '0px', boxShadow: '3px 3px 0px #111' }}
+              className="text-[#080d19] border-[3px] border-[#00d2ff] px-4 py-2 font-display font-black text-xs sm:text-sm uppercase shadow-sm select-none cursor-pointer"
+              style={{ background: bg, borderRadius: '0px', boxShadow: '3px 3px 0px #00a3ff' }}
             >
               {txt}
             </motion.div>
@@ -111,15 +111,15 @@ function SAESHeroSection() {
 /* ─── S-AES Page ──────────────────────────────────────────── */
 export default function SAESPage() {
   return (
-    <div style={{ minHeight: '100vh', background: '#F0F8FF' }}>
-      <Navbar accentColor="#228BE6" moduleLabel="S-AES" />
+    <div style={{ minHeight: '100vh', background: '#080d19' }}>
+      <Navbar accentColor="#00d2ff" moduleLabel="S-AES" />
       <SAESHeroSection />
       <SAESSimulator />
       <footer style={{
-        borderTop: '4px solid #111111', padding: '1rem 2rem',
-        background: '#228BE6', textAlign: 'center',
+        borderTop: '4px solid #00d2ff', padding: '1rem 2rem',
+        background: '#111a2e', textAlign: 'center',
         fontFamily: '"Space Mono", monospace', fontSize: '11px',
-        fontWeight: 700, textTransform: 'uppercase', color: '#111111',
+        fontWeight: 700, textTransform: 'uppercase', color: '#00d2ff',
       }}>
         S-AES Simulator — Teknik Informatika UNIBBA · Kriptografi 2026
       </footer>

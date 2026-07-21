@@ -145,7 +145,7 @@ export function ProcessingEngine() {
                 key={idx}
                 className={`
                   border-3 border-black p-3 font-grotesk flex flex-col justify-between transition-colors
-                  ${isCompleted ? 'bg-brutal-green text-black' : isActive ? 'bg-brutal-yellow text-black' : 'bg-brutal-surface text-black/30'}
+                  ${isCompleted ? 'bg-brutal-green text-black' : isActive ? 'bg-brutal-yellow text-black' : 'bg-brutal-surface text-white/40'}
                 `}
                 style={{ borderRadius: '0px' }}
               >
@@ -185,7 +185,7 @@ export function ProcessingEngine() {
 
         {/* Technical animation - stream of random binary digits */}
         <div className="w-full h-8 overflow-hidden relative border-3 border-black bg-brutal-surface flex items-center justify-center">
-          <div className="font-mono text-[10px] text-black/20 font-bold whitespace-nowrap overflow-hidden select-none w-full text-center">
+          <div className="font-mono text-[10px] text-white/20 font-bold whitespace-nowrap overflow-hidden select-none w-full text-center">
             {Array.from({ length: 64 }).map(() => (Math.random() > 0.5 ? '1' : '0')).join(' ')}
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brutal-yellow/20 to-transparent animate-pulse"></div>

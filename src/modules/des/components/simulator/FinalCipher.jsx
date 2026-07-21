@@ -13,7 +13,7 @@ export function FinalCipher() {
   if (!result) {
     return (
       <NeoCard title="HASIL SIMULASI AKHIR" className="opacity-50">
-        <div className="flex flex-col items-center justify-center py-12 text-black/40">
+        <div className="flex flex-col items-center justify-center py-12 text-white/40">
           <Info className="w-12 h-12 stroke-[3px] mb-4" />
           <p className="font-grotesk font-bold uppercase tracking-wider">
             Jalankan simulasi untuk melihat keluaran akhir
@@ -56,10 +56,10 @@ export function FinalCipher() {
           {/* Hex display */}
           <div className="bg-brutal-white border-3 border-black p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-brutal-sm">
             <div className="space-y-1">
-              <span className="text-[10px] font-mono font-black text-black/40 uppercase">
+              <span className="text-[10px] font-mono font-black text-white/40 uppercase">
                 Nilai Hexadesimal (16 Hex)
               </span>
-              <div className="font-mono text-2xl sm:text-3xl font-black text-black tracking-wider break-all select-all">
+              <div className="font-mono text-2xl sm:text-3xl font-black text-white tracking-wider break-all select-all">
                 {ciphertextHex}
               </div>
             </div>
@@ -76,7 +76,7 @@ export function FinalCipher() {
           {/* Binary display */}
           <div className="bg-brutal-white border-3 border-black p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-brutal-sm">
             <div className="space-y-1 w-full overflow-hidden">
-              <span className="text-[10px] font-mono font-black text-black/40 uppercase">
+              <span className="text-[10px] font-mono font-black text-white/40 uppercase">
                 Representasi Biner 64-bit
               </span>
               <div className="bg-brutal-surface p-3 brutal-border overflow-x-auto w-full">
@@ -99,24 +99,24 @@ export function FinalCipher() {
       <NeoCard title="REKAPITULASI LOG EKSEKUSI SIMULASI">
         <div className="font-mono text-xs divide-y-2 divide-black/10">
           <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <span className="font-bold text-black/50 uppercase">Operasi Kriptografi:</span>
+            <span className="font-bold text-white/50 uppercase">Operasi Kriptografi:</span>
             <span className="font-black font-grotesk uppercase text-sm border-2 border-black bg-black text-white px-2 py-0.5">
               DES {mode === 'encrypt' ? 'ENKRIPSI' : 'DEKRIPSI'}
             </span>
           </div>
 
           <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <span className="font-bold text-black/50 uppercase">Blok Input (Plaintext):</span>
-            <span className="font-semibold text-black break-all">{plaintextBin}</span>
+            <span className="font-bold text-white/50 uppercase">Blok Input (Plaintext):</span>
+            <span className="font-semibold text-white break-all">{plaintextBin}</span>
           </div>
 
           <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <span className="font-bold text-black/50 uppercase">Kunci Cipher (Key):</span>
-            <span className="font-semibold text-black break-all">{keyBin}</span>
+            <span className="font-bold text-white/50 uppercase">Kunci Cipher (Key):</span>
+            <span className="font-semibold text-white break-all">{keyBin}</span>
           </div>
 
           <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <span className="font-bold text-black/50 uppercase">Hasil Output (Ciphertext):</span>
+            <span className="font-bold text-white/50 uppercase">Hasil Output (Ciphertext):</span>
             <span className="font-black text-brutal-coral break-all font-mono text-sm">
               {ciphertextHex}
             </span>

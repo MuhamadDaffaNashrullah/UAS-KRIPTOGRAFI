@@ -7,89 +7,89 @@ export default {
   theme: {
     extend: {
       // ========================
-      // NEOBRUTALISM PASTEL (new unified theme)
+      // NEOBRUTALISM PASTEL (remapped for Persona 3 Reload dark theme)
       // ========================
       colors: {
-        'nb-pink':   '#4DABF7',
-        'nb-teal':   '#A5D8FF',
-        'nb-yellow': '#228BE6',
-        'nb-blue':   '#7EC8FF',
-        'nb-bg':     '#F0F8FF',
-        'nb-text':   '#111111',
-        'nb-white':  '#FFFFFF',
-        'nb-error':  '#FF5757',
+        'nb-pink':   '#3b82f6', // Electric Blue
+        'nb-teal':   '#0df5e3', // Vibrant Cyan/Teal
+        'nb-yellow': '#00a3ff', // Deep Sky Blue
+        'nb-blue':   '#00d2ff', // Vivid Cyan
+        'nb-bg':     '#080d19', // P3R Deep Navy BG
+        'nb-text':   '#ffffff', // White text
+        'nb-white':  '#111a2e', // Dark Navy Panel BG
+        'nb-error':  '#ff3b30', // Vivid Red
 
         // ========================
-        // TUGAS 11 (DES) legacy colors — kept intact so components work
+        // TUGAS 11 (DES) legacy colors — mapped to P3R
         // ========================
         brutal: {
-          yellow:  '#228BE6',   // remapped to nb-yellow
-          purple:  '#7EC8FF',   // remapped to nb-blue
-          orange:  '#4DABF7',   // remapped to nb-pink
-          green:   '#A5D8FF',   // remapped to nb-teal
-          coral:   '#FF5757',
-          cream:   '#F0F8FF',   // remapped to nb-bg
-          surface: '#E6F2FF',
-          black:   '#111111',
-          white:   '#FFFFFF',
+          yellow:  '#00a3ff',   // remapped
+          purple:  '#00d2ff',   // remapped
+          orange:  '#3b82f6',   // remapped
+          green:   '#0df5e3',   // remapped
+          coral:   '#ff3b30',
+          cream:   '#080d19',   // remapped to nb-bg
+          surface: '#111a2e',   // remapped to P3R surface
+          black:   '#00d2ff',   // remapped to cyan border
+          white:   '#111a2e',   // remapped to dark container
         },
 
         // ========================
         // TUGAS 13 (AES) legacy CSS variable references
         // ========================
-        surface:                      'var(--surface, #FFFFFF)',
-        'surface-dim':                'var(--surface-dim, #F5F5F5)',
-        'surface-bright':             'var(--surface-bright, #FFFFFF)',
-        'surface-container-lowest':   'var(--surface-container-lowest, #FFFFFF)',
-        'surface-container-low':      'var(--surface-container-low, #F8F8F8)',
-        'surface-container':          'var(--surface-container, #F0F0F0)',
-        'surface-container-high':     'var(--surface-container-high, #E8E8E8)',
-        'surface-container-highest':  'var(--surface-container-highest, #E0E0E0)',
-        'on-surface':                 'var(--on-surface, #111111)',
-        'on-surface-variant':         'var(--on-surface-variant, #444444)',
-        'inverse-surface':            'var(--inverse-surface, #111111)',
-        'inverse-on-surface':         'var(--inverse-on-surface, #FFFFFF)',
-        'outline':                    'var(--outline, #111111)',
-        'outline-variant':            'var(--outline-variant, #AAAAAA)',
-        'surface-tint':               'var(--surface-tint, #FF8FD8)',
-        'primary':                    'var(--primary, #FF8FD8)',
-        'on-primary':                 'var(--on-primary, #111111)',
-        'primary-container':          'var(--primary-container, #FFDAF0)',
-        'on-primary-container':       'var(--on-primary-container, #111111)',
-        'inverse-primary':            'var(--inverse-primary, #FF8FD8)',
-        'secondary':                  'var(--secondary, #5FE3C4)',
-        'on-secondary':               'var(--on-secondary, #111111)',
-        'secondary-container':        'var(--secondary-container, #CCFAF0)',
-        'on-secondary-container':     'var(--on-secondary-container, #111111)',
-        'tertiary':                   'var(--tertiary, #FFE156)',
-        'on-tertiary':                'var(--on-tertiary, #111111)',
-        'tertiary-container':         'var(--tertiary-container, #FFF9CC)',
-        'on-tertiary-container':      'var(--on-tertiary-container, #111111)',
-        'error':                      'var(--error, #FF5757)',
-        'on-error':                   'var(--on-error, #FFFFFF)',
-        'error-container':            'var(--error-container, #FFD0D0)',
-        'on-error-container':         'var(--on-error-container, #111111)',
-        'background':                 'var(--background, #FFF8F0)',
-        'on-background':              'var(--on-background, #111111)',
-        'surface-variant':            'var(--surface-variant, #F0EDE8)',
-        'accent-orange':              'var(--accent-orange, #FF8FD8)',
-        'accent-orange-light':        'var(--accent-orange-light, #FFDAF0)',
+        surface:                      'var(--surface, #111a2e)',
+        'surface-dim':                'var(--surface-dim, #0d1624)',
+        'surface-bright':             'var(--surface-bright, #17223b)',
+        'surface-container-lowest':   'var(--surface-container-lowest, #080d19)',
+        'surface-container-low':      'var(--surface-container-low, #0c1424)',
+        'surface-container':          'var(--surface-container, #111a2e)',
+        'surface-container-high':     'var(--surface-container-high, #17223b)',
+        'surface-container-highest':  'var(--surface-container-highest, #1e293b)',
+        'on-surface':                 'var(--on-surface, #ffffff)',
+        'on-surface-variant':         'var(--on-surface-variant, #cbd5e1)',
+        'inverse-surface':            'var(--inverse-surface, #ffffff)',
+        'inverse-on-surface':         'var(--inverse-on-surface, #080d19)',
+        'outline':                    'var(--outline, #00d2ff)',
+        'outline-variant':            'var(--outline-variant, #334155)',
+        'surface-tint':               'var(--surface-tint, #00d2ff)',
+        'primary':                    'var(--primary, #00d2ff)',
+        'on-primary':                 'var(--on-primary, #080d19)',
+        'primary-container':          'var(--primary-container, #004d7a)',
+        'on-primary-container':       'var(--on-primary-container, #ffffff)',
+        'inverse-primary':            'var(--inverse-primary, #00d2ff)',
+        'secondary':                  'var(--secondary, #0df5e3)',
+        'on-secondary':               'var(--on-secondary, #080d19)',
+        'secondary-container':        'var(--secondary-container, #00665c)',
+        'on-secondary-container':     'var(--on-secondary-container, #ffffff)',
+        'tertiary':                   'var(--tertiary, #3b82f6)',
+        'on-tertiary':                'var(--on-tertiary, #ffffff)',
+        'tertiary-container':         'var(--tertiary-container, #1d4ed8)',
+        'on-tertiary-container':      'var(--on-tertiary-container, #ffffff)',
+        'error':                      'var(--error, #ff3b30)',
+        'on-error':                   'var(--on-error, #ffffff)',
+        'error-container':            'var(--error-container, #7f1d1d)',
+        'on-error-container':         'var(--on-error-container, #ffffff)',
+        'background':                 'var(--background, #080d19)',
+        'on-background':              'var(--on-background, #ffffff)',
+        'surface-variant':            'var(--surface-variant, #1e293b)',
+        'accent-orange':              'var(--accent-orange, #00d2ff)',
+        'accent-orange-light':        'var(--accent-orange-light, #004d7a)',
       },
 
       boxShadow: {
-        // Neobrutalism pastel
-        'nb':     '4px 4px 0px #111111',
-        'nb-sm':  '2px 2px 0px #111111',
-        'nb-lg':  '6px 6px 0px #111111',
-        'nb-xl':  '8px 8px 0px #111111',
-        'nb-pink':   '4px 4px 0px #4DABF7',
-        'nb-teal':   '4px 4px 0px #A5D8FF',
-        'nb-yellow': '4px 4px 0px #228BE6',
-        'nb-blue':   '4px 4px 0px #7EC8FF',
+        // Neobrutalism P3R
+        'nb':     '4px 4px 0px #00a3ff',
+        'nb-sm':  '2px 2px 0px #00a3ff',
+        'nb-lg':  '6px 6px 0px #00a3ff',
+        'nb-xl':  '8px 8px 0px #00a3ff',
+        'nb-pink':   '4px 4px 0px #3b82f6',
+        'nb-teal':   '4px 4px 0px #0df5e3',
+        'nb-yellow': '4px 4px 0px #00a3ff',
+        'nb-blue':   '4px 4px 0px #00d2ff',
         // DES legacy
-        'brutal-sm': '3px 3px 0 0 #111111',
-        'brutal':    '6px 6px 0 0 #111111',
-        'brutal-lg': '8px 8px 0 0 #111111',
+        'brutal-sm': '3px 3px 0 0 #00d2ff',
+        'brutal':    '6px 6px 0 0 #00d2ff',
+        'brutal-lg': '8px 8px 0 0 #00d2ff',
       },
 
       fontFamily: {

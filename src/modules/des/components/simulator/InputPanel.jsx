@@ -60,13 +60,13 @@ export function InputPanel() {
             <div className="flex border-2 border-black divide-x-2 divide-black bg-brutal-white font-mono text-xs overflow-hidden shadow-brutal-sm">
               <button
                 onClick={() => plaintextFormat !== 'hex' && togglePlaintextFormat()}
-                className={`px-3 py-1 font-bold ${plaintextFormat === 'hex' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-black/40'}`}
+                className={`px-3 py-1 font-bold ${plaintextFormat === 'hex' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-white/40'}`}
               >
                 HEX
               </button>
               <button
                 onClick={() => plaintextFormat !== 'bin' && togglePlaintextFormat()}
-                className={`px-3 py-1 font-bold ${plaintextFormat === 'bin' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-black/40'}`}
+                className={`px-3 py-1 font-bold ${plaintextFormat === 'bin' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-white/40'}`}
               >
                 BIN
               </button>
@@ -74,7 +74,7 @@ export function InputPanel() {
           }
         >
           <div className="space-y-4">
-            <label className="block text-xs font-mono font-black uppercase text-black/60">
+            <label className="block text-xs font-mono font-black uppercase text-white/60">
               Blok Data 64-Bit {plaintextFormat === 'hex' ? '(16 Karakter Hexadesimal)' : '(64 Digit Biner)'}
             </label>
             
@@ -84,7 +84,7 @@ export function InputPanel() {
               onChange={(e) => setPlaintext(e.target.value)}
               maxLength={plaintextFormat === 'hex' ? 16 : 64}
               className={`
-                w-full p-4 font-mono text-lg border-3 border-black bg-brutal-cream text-black outline-none transition-colors
+                w-full p-4 font-mono text-lg border-3 border-black bg-brutal-cream text-white outline-none transition-colors
                 ${validationErrors.plaintext ? 'border-brutal-coral focus:outline-brutal-coral' : 'border-black focus:bg-brutal-purple/15'}
               `}
               placeholder={plaintextFormat === 'hex' ? '0123456789ABCDEF' : '01000000...'}
@@ -95,14 +95,14 @@ export function InputPanel() {
                 {validationErrors.plaintext}
               </p>
             ) : (
-              <p className="text-xs font-mono font-bold text-black/40 uppercase">
+              <p className="text-xs font-mono font-bold text-white/40 uppercase">
                 Status: Blok Plaintext Siap
               </p>
             )}
 
             {/* Real-time Binary Preview */}
             <div className="pt-2 border-t border-black/10">
-              <div className="text-[10px] font-mono font-bold text-black/50 uppercase mb-2">
+              <div className="text-[10px] font-mono font-bold text-white/50 uppercase mb-2">
                 Representasi Grid Biner
               </div>
               <div className="bg-brutal-surface p-3 border-3 border-black">
@@ -130,13 +130,13 @@ export function InputPanel() {
             <div className="flex border-2 border-black divide-x-2 divide-black bg-brutal-white font-mono text-xs overflow-hidden shadow-brutal-sm">
               <button
                 onClick={() => keyFormat !== 'hex' && toggleKeyFormat()}
-                className={`px-3 py-1 font-bold ${keyFormat === 'hex' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-black/40'}`}
+                className={`px-3 py-1 font-bold ${keyFormat === 'hex' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-white/40'}`}
               >
                 HEX
               </button>
               <button
                 onClick={() => keyFormat !== 'bin' && toggleKeyFormat()}
-                className={`px-3 py-1 font-bold ${keyFormat === 'bin' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-black/40'}`}
+                className={`px-3 py-1 font-bold ${keyFormat === 'bin' ? 'bg-brutal-yellow text-black' : 'bg-brutal-white text-white/40'}`}
               >
                 BIN
               </button>
@@ -144,7 +144,7 @@ export function InputPanel() {
           }
         >
           <div className="space-y-4">
-            <label className="block text-xs font-mono font-black uppercase text-black/60">
+            <label className="block text-xs font-mono font-black uppercase text-white/60">
               Kunci Rahasia 64-Bit {keyFormat === 'hex' ? '(16 Karakter Hexadesimal)' : '(64 Digit Biner)'}
             </label>
 
@@ -154,7 +154,7 @@ export function InputPanel() {
               onChange={(e) => setKey(e.target.value)}
               maxLength={keyFormat === 'hex' ? 16 : 64}
               className={`
-                w-full p-4 font-mono text-lg border-3 border-black bg-brutal-cream text-black outline-none transition-colors
+                w-full p-4 font-mono text-lg border-3 border-black bg-brutal-cream text-white outline-none transition-colors
                 ${validationErrors.key ? 'border-brutal-coral focus:outline-brutal-coral' : 'border-black focus:bg-brutal-purple/15'}
               `}
               placeholder={keyFormat === 'hex' ? '133457799BBCDFF1' : '00010011...'}
@@ -165,14 +165,14 @@ export function InputPanel() {
                 {validationErrors.key}
               </p>
             ) : (
-              <p className="text-xs font-mono font-bold text-black/40 uppercase">
+              <p className="text-xs font-mono font-bold text-white/40 uppercase">
                 Status: Kunci Siap
               </p>
             )}
 
             {/* Key Parity Indicator */}
             <div className="pt-2 border-t border-black/10">
-              <div className="text-[10px] font-mono font-bold text-black/50 uppercase mb-2 flex justify-between">
+              <div className="text-[10px] font-mono font-bold text-white/50 uppercase mb-2 flex justify-between">
                 <span>Pratinjau Bit Paritas (Bit abu-abu diabaikan dalam DES)</span>
               </div>
               <div className="bg-brutal-surface p-3 border-3 border-black">
@@ -197,10 +197,10 @@ export function InputPanel() {
         style={{ borderRadius: '0px' }}
       >
         <div>
-          <h4 className="font-grotesk font-black text-lg text-black uppercase">
+          <h4 className="font-grotesk font-black text-lg text-white uppercase">
             Pilihan Mode Simulator
           </h4>
-          <p className="font-inter text-xs text-black/60">
+          <p className="font-inter text-xs text-white/60">
             Pilih untuk melakukan enkripsi DES biasa atau dekripsi (menggunakan urutan subkey terbalik).
           </p>
         </div>
@@ -208,13 +208,13 @@ export function InputPanel() {
         <div className="flex border-3 border-black bg-brutal-white font-mono text-sm overflow-hidden shadow-brutal-sm shrink-0">
           <button
             onClick={() => setMode('encrypt')}
-            className={`px-6 py-2.5 font-grotesk font-black uppercase text-sm flex items-center gap-2 transition-colors ${mode === 'encrypt' ? 'bg-brutal-purple text-black' : 'bg-brutal-white text-black/40'}`}
+            className={`px-6 py-2.5 font-grotesk font-black uppercase text-sm flex items-center gap-2 transition-colors ${mode === 'encrypt' ? 'bg-brutal-purple text-black' : 'bg-brutal-white text-white/40'}`}
           >
             ENKRIPSI
           </button>
           <button
             onClick={() => setMode('decrypt')}
-            className={`px-6 py-2.5 font-grotesk font-black uppercase text-sm flex items-center gap-2 transition-colors ${mode === 'decrypt' ? 'bg-brutal-coral text-black' : 'bg-brutal-white text-black/40'}`}
+            className={`px-6 py-2.5 font-grotesk font-black uppercase text-sm flex items-center gap-2 transition-colors ${mode === 'decrypt' ? 'bg-brutal-coral text-black' : 'bg-brutal-white text-white/40'}`}
           >
             DEKRIPSI
           </button>

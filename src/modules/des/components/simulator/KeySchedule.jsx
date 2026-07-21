@@ -14,7 +14,7 @@ export function KeySchedule() {
   if (!result) {
     return (
       <NeoCard title="KEY SCHEDULE GENERATION" className="opacity-50">
-        <div className="flex flex-col items-center justify-center py-12 text-black/40">
+        <div className="flex flex-col items-center justify-center py-12 text-white/40">
           <Key className="w-12 h-12 stroke-[3px] mb-4" />
           <p className="font-grotesk font-bold uppercase tracking-wider">
           Jalankan simulasi untuk menghasilkan Key Schedule / Penjadwalan Kunci
@@ -48,7 +48,7 @@ export function KeySchedule() {
         }
       >
         <div className="space-y-4">
-          <p className="font-inter text-xs text-black/70">
+          <p className="font-inter text-xs text-white/70">
             PC-1 memilih 56 bit dari kunci asli 64-bit, membuang 8 bit paritas (8, 16, 24, 32, 40, 48, 56, 64) dan membagi bit terpilih menjadi dua register 28-bit, yaitu <strong>C0</strong> (Kiri) dan <strong>D0</strong> (Kanan).
           </p>
 
@@ -99,7 +99,7 @@ export function KeySchedule() {
       {/* 2. SUBKEY SCHEDULE 16 ROUNDS */}
       <NeoCard title="2. PERGESERAN REGISTER 16 PUTARAN & SUBKEY (PC-2)">
         <div className="space-y-4">
-          <p className="font-inter text-xs text-black/70 font-medium">
+          <p className="font-inter text-xs text-white/70 font-medium">
             Pada setiap putaran, register C dan D digeser ke kiri (left-shift) sebanyak 1 atau 2 bit sesuai jadwal pergeseran. 
             Kemudian, gabungan blok 56-bit tersebut dipermutasikan melalui <strong>PC-2</strong> untuk menghasilkan subkey 48-bit <strong>K(putaran)</strong>.
           </p>
@@ -143,7 +143,7 @@ export function KeySchedule() {
 
                       <td className="p-3 border-r-3 border-black max-w-xs overflow-hidden">
                         <div className="flex flex-col gap-1">
-                          <span className="text-[9px] text-black/50">C_prev: {step.C_prev.slice(0, step.shiftAmount)}...</span>
+                          <span className="text-[9px] text-white/50">C_prev: {step.C_prev.slice(0, step.shiftAmount)}...</span>
                           <BinaryGrid
                             binaryString={step.C}
                             groupSize={7}
@@ -155,7 +155,7 @@ export function KeySchedule() {
 
                       <td className="p-3 border-r-3 border-black max-w-xs overflow-hidden">
                         <div className="flex flex-col gap-1">
-                          <span className="text-[9px] text-black/50">D_prev: {step.D_prev.slice(0, step.shiftAmount)}...</span>
+                          <span className="text-[9px] text-white/50">D_prev: {step.D_prev.slice(0, step.shiftAmount)}...</span>
                           <BinaryGrid
                             binaryString={step.D}
                             groupSize={7}
@@ -165,12 +165,12 @@ export function KeySchedule() {
                         </div>
                       </td>
 
-                      <td className="p-3 font-grotesk font-extrabold text-sm text-black">
+                      <td className="p-3 font-grotesk font-extrabold text-sm text-white">
                         <div className="flex items-center gap-2">
-                          <span className="border-2 border-black bg-brutal-yellow px-2 py-0.5 shadow-brutal-sm font-mono text-xs">
+                          <span className="border-2 border-black bg-brutal-yellow px-2 py-0.5 shadow-brutal-sm font-mono text-xs text-black">
                             {step.K_hex}
                           </span>
-                          <span className="text-[9px] font-mono text-black/40 hidden xl:inline">
+                          <span className="text-[9px] font-mono text-white/40 hidden xl:inline">
                             ({step.K.slice(0, 8)}...)
                           </span>
                         </div>
@@ -206,19 +206,19 @@ export function KeySchedule() {
                     </div>
 
                     <div className="space-y-1">
-                      <div className="font-bold text-black/60 uppercase font-grotesk">Register C:</div>
+                      <div className="font-bold text-white/60 uppercase font-grotesk">Register C:</div>
                       <BinaryGrid binaryString={step.C} groupSize={4} highlightColor="purple" />
-                      <div className="text-[10px] text-black/40">Sebelumnya: {step.C_prev}</div>
+                      <div className="text-[10px] text-white/40">Sebelumnya: {step.C_prev}</div>
                     </div>
 
                     <div className="space-y-1">
-                      <div className="font-bold text-black/60 uppercase font-grotesk">Register D:</div>
+                      <div className="font-bold text-white/60 uppercase font-grotesk">Register D:</div>
                       <BinaryGrid binaryString={step.D} groupSize={4} highlightColor="orange" />
-                      <div className="text-[10px] text-black/40">Sebelumnya: {step.D_prev}</div>
+                      <div className="text-[10px] text-white/40">Sebelumnya: {step.D_prev}</div>
                     </div>
 
                     <div className="pt-2 border-t border-black/10">
-                      <div className="font-bold text-black/60 uppercase font-grotesk mb-1">Subkey Keluaran PC-2 (48-bit):</div>
+                      <div className="font-bold text-white/60 uppercase font-grotesk mb-1">Subkey Keluaran PC-2 (48-bit):</div>
                       <div className="p-2 bg-brutal-surface border-2 border-black font-mono text-center font-black">
                         {step.K_hex}
                       </div>

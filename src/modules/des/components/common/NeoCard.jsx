@@ -53,7 +53,7 @@ export function NeoCard({
       {/* Optional Header */}
       {title && (
         <div className="flex justify-between items-center px-4 py-2.5 sm:px-5 sm:py-3 border-b-3 border-black bg-brutal-surface">
-          <h4 className="font-grotesk font-bold text-base uppercase tracking-wider text-black select-none">
+          <h4 className="font-grotesk font-bold text-base uppercase tracking-wider text-white select-none">
             {title}
           </h4>
           {headerActions && <div className="flex items-center">{headerActions}</div>}

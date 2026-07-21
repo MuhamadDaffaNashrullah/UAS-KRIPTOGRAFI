@@ -106,7 +106,7 @@ export function RoundViewer({ roundData }) {
                 Permutasi Ekspansi E: R({round - 1}) 32-bit ➔ 48-bit
               </h5>
             </div>
-            <p className="text-xs text-black/60 font-inter leading-relaxed">
+            <p className="text-xs text-white/60 font-inter leading-relaxed">
               Mengekspansi Blok Kanan 32-bit menjadi 48-bit dengan menduplikasi bit-bit batas tertentu (ditandai warna oranye di bawah).
             </p>
             <div className="bg-brutal-surface p-3 brutal-border">
@@ -132,22 +132,22 @@ export function RoundViewer({ roundData }) {
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-3 items-center">
               <div className="md:col-span-2 bg-brutal-surface p-3 brutal-border">
-                <div className="text-[9px] font-mono font-bold text-black/50 mb-1 uppercase">R Ekspansi (48-bit)</div>
+                <div className="text-[9px] font-mono font-bold text-white/50 mb-1 uppercase">R Ekspansi (48-bit)</div>
                 <BinaryGrid binaryString={expandedR} groupSize={6} />
               </div>
 
-              <div className="flex items-center justify-center font-grotesk font-black text-sm bg-brutal-coral border-3 border-black w-16 h-10 mx-auto shadow-brutal-sm" style={{ borderRadius: '0px' }}>
+              <div className="flex items-center justify-center font-grotesk font-black text-sm bg-brutal-coral border-3 border-black w-16 h-10 mx-auto shadow-brutal-sm text-white" style={{ borderRadius: '0px' }}>
                 XOR
               </div>
 
               <div className="md:col-span-2 bg-brutal-surface p-3 brutal-border">
-                <div className="text-[9px] font-mono font-bold text-black/50 mb-1 uppercase">Subkey K (48-bit)</div>
+                <div className="text-[9px] font-mono font-bold text-white/50 mb-1 uppercase">Subkey K (48-bit)</div>
                 <BinaryGrid binaryString={subkey} groupSize={6} highlightColor="purple" />
               </div>
             </div>
 
             <div className="bg-brutal-yellow/10 p-3 border-3 border-black bg-brutal-yellow/5" style={{ border: '3px solid #000000' }}>
-              <div className="text-[9px] font-mono font-bold text-black/50 mb-1 uppercase">Keluaran XOR (48-bit)</div>
+              <div className="text-[9px] font-mono font-bold text-white/50 mb-1 uppercase">Keluaran XOR (48-bit)</div>
               <BinaryGrid binaryString={xorResult} groupSize={6} highlightColor="yellow" />
             </div>
           </div>
@@ -162,14 +162,14 @@ export function RoundViewer({ roundData }) {
                 Substitusi S-Box: 8 Tabel Mini (48-bit ➔ 32-bit)
               </h5>
             </div>
-            <p className="text-xs text-black/60 font-inter leading-relaxed mb-4">
+            <p className="text-xs text-white/60 font-inter leading-relaxed mb-4">
               Dibagi menjadi 8 blok masing-masing 6-bit. Setiap blok dimasukkan ke S-Box yang sesuai. Bit pertama dan terakhir (luar) menentukan baris, bit tengah menentukan kolom.
             </p>
             
             <SBoxVisualizer sboxDetails={sboxDetails} />
             
             <div className="bg-brutal-green/10 p-3 border-3 border-black bg-brutal-green/5 mt-4" style={{ border: '3px solid #000000' }}>
-              <div className="text-[9px] font-mono font-bold text-black/50 mb-1 uppercase">Hasil Gabungan S-Box (32-bit)</div>
+              <div className="text-[9px] font-mono font-bold text-white/50 mb-1 uppercase">Hasil Gabungan S-Box (32-bit)</div>
               <BinaryGrid binaryString={sboxOutput} groupSize={4} highlightColor="green" />
             </div>
           </div>
@@ -184,7 +184,7 @@ export function RoundViewer({ roundData }) {
                 Permutasi P (Blok 32-bit)
               </h5>
             </div>
-            <p className="text-xs text-black/60 font-inter leading-relaxed">
+            <p className="text-xs text-white/60 font-inter leading-relaxed">
               Mengacak kembali 32 bit keluaran gabungan S-Box menggunakan tabel permutasi P untuk mendistribusikan bit secara matematis.
             </p>
             <div className="bg-brutal-surface p-3 brutal-border">
@@ -209,16 +209,16 @@ export function RoundViewer({ roundData }) {
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-3 items-center">
               <div className="md:col-span-2 bg-brutal-surface p-3 brutal-border">
-                <div className="text-[9px] font-mono font-bold text-black/50 mb-1 uppercase">L({round - 1}) (32-bit)</div>
+                <div className="text-[9px] font-mono font-bold text-white/50 mb-1 uppercase">L({round - 1}) (32-bit)</div>
                 <BinaryGrid binaryString={L_prev} highlightColor="coral" />
               </div>
 
-              <div className="flex items-center justify-center font-grotesk font-black text-sm bg-brutal-coral border-3 border-black w-16 h-10 mx-auto shadow-brutal-sm" style={{ borderRadius: '0px' }}>
+              <div className="flex items-center justify-center font-grotesk font-black text-sm bg-brutal-coral border-3 border-black w-16 h-10 mx-auto shadow-brutal-sm text-white" style={{ borderRadius: '0px' }}>
                 XOR
               </div>
 
               <div className="md:col-span-2 bg-brutal-surface p-3 brutal-border">
-                <div className="text-[9px] font-mono font-bold text-black/50 mb-1 uppercase">Keluaran Permutasi P (32-bit)</div>
+                <div className="text-[9px] font-mono font-bold text-white/50 mb-1 uppercase">Keluaran Permutasi P (32-bit)</div>
                 <BinaryGrid binaryString={pOutput} highlightColor="purple" />
               </div>
             </div>

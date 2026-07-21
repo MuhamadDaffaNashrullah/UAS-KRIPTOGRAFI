@@ -70,7 +70,7 @@ export function FooterActions() {
 
         <button
           onClick={reset}
-          className="flex flex-col items-center justify-center bg-brutal-white text-black border-3 border-black py-1 px-1 sm:px-2 flex-1 max-w-[80px] sm:max-w-[100px] active:translate-x-[2px] active:translate-y-[2px]"
+          className="flex flex-col items-center justify-center bg-brutal-white text-white border-3 border-black py-1 px-1 sm:px-2 flex-1 max-w-[80px] sm:max-w-[100px] active:translate-x-[2px] active:translate-y-[2px]"
         >
           <RotateCcw className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[3px]" />
           <span className="font-grotesk font-black text-[8px] sm:text-[9px] uppercase tracking-wider mt-0.5">ULANG</span>
@@ -88,7 +88,7 @@ export function FooterActions() {
         <button
           onClick={handleExportTXT}
           disabled={!result}
-          className="flex flex-col items-center justify-center bg-brutal-orange text-black border-3 border-black py-1 px-1 sm:px-2 flex-1 max-w-[80px] sm:max-w-[100px] disabled:opacity-40 active:translate-x-[2px] active:translate-y-[2px]"
+          className="flex flex-col items-center justify-center bg-brutal-orange text-white border-3 border-black py-1 px-1 sm:px-2 flex-1 max-w-[80px] sm:max-w-[100px] disabled:opacity-40 active:translate-x-[2px] active:translate-y-[2px]"
         >
           <Download className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[3px]" />
           <span className="font-grotesk font-black text-[8px] sm:text-[9px] uppercase tracking-wider mt-0.5">EKSPOR</span>

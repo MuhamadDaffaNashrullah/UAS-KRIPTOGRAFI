@@ -3,13 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const modules = [
-  { path: '/des',  label: 'DES',   color: '#7EC8FF', bit: '64-bit' },
-  { path: '/sdes', label: 'S-DES', color: '#A5D8FF', bit: '8-bit'  },
-  { path: '/aes',  label: 'AES',   color: '#4DABF7', bit: '128-bit'},
-  { path: '/saes', label: 'S-AES', color: '#228BE6', bit: '16-bit' },
+  { path: '/des',  label: 'DES',   color: '#3b82f6', bit: '64-bit' },
+  { path: '/sdes', label: 'S-DES', color: '#0df5e3', bit: '8-bit'  },
+  { path: '/aes',  label: 'AES',   color: '#00a3ff', bit: '128-bit'},
+  { path: '/saes', label: 'S-AES', color: '#00d2ff', bit: '16-bit' },
 ];
 
-export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) {
+export default function Navbar({ accentColor = '#00d2ff', moduleLabel = null }) {
   const location = useLocation();
   const isHome = location.pathname === '/';
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
   return (
     <nav
       className="sticky top-0 z-50 border-b-4 border-nb-text"
-      style={{ background: accentColor }}
+      style={{ background: '#111a2e' }}
     >
       <div className="nb-container flex items-center justify-between h-16 relative">
         {/* Logo */}
@@ -27,7 +27,7 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
         >
           <span
             className="inline-flex items-center justify-center w-8 h-8 border-4 border-nb-text font-mono text-xs font-bold"
-            style={{ background: '#111111', color: accentColor }}
+            style={{ background: '#00d2ff', color: '#080d19' }}
           >
             CF
           </span>
@@ -43,7 +43,7 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
         {/* Hamburger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-center w-10 h-10 border-4 border-black bg-white text-black shadow-[3px_3px_0px_#000] hover:translate-x-[1.5px] hover:translate-y-[1.5px] hover:shadow-none active:translate-x-[3px] active:translate-y-[3px] transition-all relative z-50 focus:outline-none cursor-pointer"
+          className="flex items-center justify-center w-10 h-10 border-4 border-[#00d2ff] bg-[#111a2e] text-[#00d2ff] shadow-[3px_3px_0px_#00a3ff] hover:bg-[#00d2ff] hover:text-[#080d19] transition-all relative z-50 focus:outline-none cursor-pointer"
           style={{ borderRadius: '0px' }}
         >
           <span className="material-symbols-outlined font-black text-xl select-none">
@@ -57,7 +57,7 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
             <>
               {/* Overlay background to close dropdown */}
               <div 
-                className="fixed inset-0 z-40 bg-black/10" 
+                className="fixed inset-0 z-40 bg-black/40" 
                 onClick={() => setIsOpen(false)} 
               />
 
@@ -66,10 +66,10 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -12, scale: 0.95 }}
                 transition={{ duration: 0.12, ease: 'easeOut' }}
-                className="absolute right-4 top-[4.5rem] w-64 border-4 border-black bg-[#FFF8F0] shadow-[6px_6px_0px_#000] flex flex-col p-3 z-50 gap-2"
+                className="absolute right-4 top-[4.5rem] w-64 border-4 border-[#00d2ff] bg-[#111a2e] shadow-[6px_6px_0px_#00a3ff] flex flex-col p-3 z-50 gap-2"
                 style={{ borderRadius: '0px' }}
               >
-                <div className="font-mono text-[9px] font-black text-black/50 px-2 py-1 uppercase tracking-widest border-b-2 border-black/10 pb-2 mb-1">
+                <div className="font-mono text-[9px] font-black text-white/50 px-2 py-1 uppercase tracking-widest border-b-2 border-white/10 pb-2 mb-1">
                   Navigasi Simulator:
                 </div>
                 
@@ -80,11 +80,11 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
                       key={m.path}
                       to={m.path}
                       onClick={() => setIsOpen(false)}
-                      className="flex items-center justify-between px-3 py-2.5 font-display font-black text-xs sm:text-sm uppercase border-[3px] border-black transition-all"
+                      className="flex items-center justify-between px-3 py-2.5 font-display font-black text-xs sm:text-sm uppercase border-[3px] border-[#00d2ff] transition-all"
                       style={{
-                        background: active ? '#111111' : m.color,
-                        color: active ? m.color : '#111111',
-                        boxShadow: active ? 'none' : '2px 2px 0px #111111',
+                        background: active ? '#00d2ff' : '#111a2e',
+                        color: active ? '#080d19' : '#ffffff',
+                        boxShadow: active ? 'none' : '2px 2px 0px #00a3ff',
                         transform: active ? 'translate(1.5px, 1.5px)' : 'none',
                         borderRadius: '0px'
                       }}
@@ -99,8 +99,22 @@ export default function Navbar({ accentColor = '#7EC8FF', moduleLabel = null }) 
                   <Link
                     to="/"
                     onClick={() => setIsOpen(false)}
-                    className="flex items-center justify-center gap-2 px-3 py-2.5 border-[3px] border-black bg-white text-black font-display font-black text-xs sm:text-sm uppercase shadow-[2px_2px_0px_#111] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all mt-2"
-                    style={{ borderRadius: '0px' }}
+                    className="flex items-center justify-center gap-2 px-3 py-2.5 border-[3px] font-display font-black text-xs sm:text-sm uppercase transition-all mt-2"
+                    style={{
+                      borderColor: '#00d2ff',
+                      background: '#111a2e',
+                      color: '#00d2ff',
+                      boxShadow: '2px 2px 0px #00a3ff',
+                      borderRadius: '0px'
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.background = '#00d2ff';
+                      e.currentTarget.style.color = '#080d19';
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.background = '#111a2e';
+                      e.currentTarget.style.color = '#00d2ff';
+                    }}
                   >
                     ← BERANDA UTAMA
                   </Link>

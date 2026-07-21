@@ -52,11 +52,11 @@ export function Accordion({
               {headerBadge}
             </div>
           )}
-          <span className="font-grotesk font-extrabold text-base tracking-wider uppercase text-black">
+          <span className="font-grotesk font-extrabold text-base tracking-wider uppercase text-white">
             {title}
           </span>
           {headerSummary && (
-            <div className="hidden sm:flex items-center gap-2 font-mono text-xs text-black/60 pl-3">
+            <div className="hidden sm:flex items-center gap-2 font-mono text-xs text-white/60 pl-3">
               {headerSummary}
             </div>
           )}
@@ -67,7 +67,7 @@ export function Accordion({
           transition={{ duration: 0.15, ease: 'easeInOut' }}
           className="w-7 h-7 flex items-center justify-center border-2 border-black bg-brutal-white shadow-brutal-sm"
         >
-          <ChevronDown className="w-4 h-4 text-black stroke-[3px]" />
+          <ChevronDown className="w-4 h-4 text-white stroke-[3px]" />
         </motion.div>
       </button>
 

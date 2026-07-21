@@ -38,13 +38,13 @@ export function SBoxVisualizer({ sboxDetails }) {
                   <span>Input Chunk:</span>
                   <span className="font-extrabold text-brutal-coral">{input}</span>
                 </div>
-                <div className="flex justify-between text-black/60">
+                <div className="flex justify-between text-white/60">
                   <span>Row Bits (1&6):</span>
                   <span>
                     <strong className="text-brutal-purple">{input[0] + input[5]}</strong> ({row})
                   </span>
                 </div>
-                <div className="flex justify-between text-black/60">
+                <div className="flex justify-between text-white/60">
                   <span>Col Bits (2-5):</span>
                   <span>
                     <strong className="text-brutal-orange">{input.slice(1, 5)}</strong> ({col})
@@ -75,12 +75,12 @@ export function SBoxVisualizer({ sboxDetails }) {
                           const isColSelected = col === cIdx;
                           const isIntersection = isRowSelected && isColSelected;
                           
-                          let cellClass = 'text-black/60 border border-black/10';
+                          let cellClass = 'text-white/60 border border-black/10';
                           
                           if (isIntersection) {
                             cellClass = 'bg-brutal-green text-black font-black border-2 border-black scale-110 z-10 shadow-brutal-sm';
                           } else if (isColSelected) {
-                            cellClass = 'bg-brutal-orange/15 text-black border-x border-black/20';
+                            cellClass = 'bg-brutal-orange/15 text-white border-x border-black/20';
                           }
 
                           return (

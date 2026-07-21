@@ -58,6 +58,9 @@ div[class*="bg-surface-container"] {
   box-shadow: 6px 6px 0px #111111 !important;
   border-radius: 0px !important;
   background-color: #ffffff !important;
+  --on-surface: #111111;
+  --on-surface-variant: #555555;
+  color: #111111;
 }
 
 input[type="text"], 

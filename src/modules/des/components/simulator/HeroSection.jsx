@@ -66,7 +66,7 @@ export function HeroSection() {
   }, [displayedText, isDeleting, currentPhraseIndex, isTransitioning]);
 
   return (
-    <section className="relative w-full py-8 md:py-12 border-b-4 border-black bg-brutal-cream overflow-hidden px-6 md:px-12">
+    <section className="relative w-full py-8 md:py-12 border-b-4 border-[#00d2ff] bg-brutal-cream overflow-hidden px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-12">
         {/* Title */}
         <div className="flex-1 max-w-2xl">
@@ -77,11 +77,11 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="font-syne font-black text-5xl sm:text-7xl lg:text-8xl leading-[0.9] tracking-tighter uppercase text-black select-none whitespace-pre-line min-h-[2em]"
+              className="font-syne font-black text-5xl sm:text-7xl lg:text-8xl leading-[0.9] tracking-tighter uppercase text-white select-none whitespace-pre-line min-h-[2em]"
             >
               {displayedText}
               {!isTransitioning && (
-                <span className="inline-block w-1 h-[0.9em] bg-black ml-1 animate-pulse align-middle"></span>
+                <span className="inline-block w-1 h-[0.9em] bg-white ml-1 animate-pulse align-middle"></span>
               )}
             </motion.h2>
           </AnimatePresence>
@@ -89,7 +89,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1, ease: 'easeOut' }}
-            className="font-grotesk font-extrabold text-sm sm:text-lg text-black/70 mt-3 max-w-xl uppercase"
+            className="font-grotesk font-extrabold text-sm sm:text-lg text-white/70 mt-3 max-w-xl uppercase"
           >
             Simulator Interaktif Algoritma DES — Visualisasi Key Schedule, Jaringan Feistel & Substitusi S-Box.
           </motion.p>
@@ -103,7 +103,7 @@ export function HeroSection() {
             animate={{ scale: 1, rotate: -2 }}
             whileHover={{ scale: 1.1, rotate: 0, y: -4 }}
             transition={{ type: 'spring', stiffness: 220, damping: 10 }}
-            className="bg-brutal-yellow text-black border-3 border-black px-4 py-2 font-grotesk font-black text-sm uppercase shadow-brutal-sm select-none cursor-pointer"
+            className="bg-brutal-yellow text-black border-3 border-[#00d2ff] px-4 py-2 font-grotesk font-black text-sm uppercase shadow-brutal-sm select-none cursor-pointer"
             style={{ borderRadius: '0px' }}
           >
             16 ROUNDS
@@ -114,7 +114,7 @@ export function HeroSection() {
             animate={{ scale: 1, rotate: 3 }}
             whileHover={{ scale: 1.1, rotate: 0, y: -4 }}
             transition={{ type: 'spring', stiffness: 220, damping: 10, delay: 0.06 }}
-            className="bg-brutal-purple text-black border-3 border-black px-4 py-2 font-grotesk font-black text-sm uppercase shadow-brutal-sm select-none cursor-pointer"
+            className="bg-brutal-purple text-black border-3 border-[#00d2ff] px-4 py-2 font-grotesk font-black text-sm uppercase shadow-brutal-sm select-none cursor-pointer"
             style={{ borderRadius: '0px' }}
           >
             64-BIT BLOCK
@@ -125,7 +125,7 @@ export function HeroSection() {
             animate={{ scale: 1, rotate: -1 }}
             whileHover={{ scale: 1.1, rotate: 0, y: -4 }}
             transition={{ type: 'spring', stiffness: 220, damping: 10, delay: 0.12 }}
-            className="bg-brutal-orange text-black border-3 border-black px-4 py-2 font-grotesk font-black text-sm uppercase shadow-brutal-sm select-none cursor-pointer"
+            className="bg-brutal-orange text-white border-3 border-[#00d2ff] px-4 py-2 font-grotesk font-black text-sm uppercase shadow-brutal-sm select-none cursor-pointer"
             style={{ borderRadius: '0px' }}
           >
             56-BIT KEY

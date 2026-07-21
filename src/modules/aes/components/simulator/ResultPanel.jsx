@@ -70,7 +70,7 @@ export default function ResultPanel() {
             ${copied
               ? 'bg-emerald-500 text-white border-emerald-500'
               : `border-outline-variant text-on-surface-variant 
-                 hover:bg-surface-container-high hover:text-on-surface`
+                 hover:bg-white/10 hover:text-white`
             }`}
         >
           <span className="material-symbols-outlined text-base">
@@ -82,7 +82,7 @@ export default function ResultPanel() {
 
       {/* Hex Output */}
       <div className="bg-surface-container-low rounded-xl p-4 border border-outline-variant">
-        <p className="font-mono text-sm font-bold text-on-surface tracking-wider break-all leading-relaxed">
+        <p className="font-mono text-sm font-bold text-[#080d19] tracking-wider break-all leading-relaxed">
           {formatted}
         </p>
       </div>
@@ -90,12 +90,12 @@ export default function ResultPanel() {
       {/* Meta info */}
       <div className="grid grid-cols-2 gap-3 text-[11px]">
         <div className="bg-surface-container rounded-xl p-3 border border-outline-variant">
-          <p className="text-on-surface-variant mb-0.5 uppercase tracking-wide font-semibold">Input</p>
-          <p className="font-mono text-on-surface truncate">{inputHex.toUpperCase()}</p>
+          <p className="text-neutral-500 mb-0.5 uppercase tracking-wide font-semibold">Input</p>
+          <p className="font-mono text-[#080d19] truncate">{inputHex.toUpperCase()}</p>
         </div>
         <div className="bg-surface-container rounded-xl p-3 border border-outline-variant">
-          <p className="text-on-surface-variant mb-0.5 uppercase tracking-wide font-semibold">Kunci</p>
-          <p className="font-mono text-on-surface truncate">{keyHex.toUpperCase()}</p>
+          <p className="text-neutral-500 mb-0.5 uppercase tracking-wide font-semibold">Kunci</p>
+          <p className="font-mono text-[#080d19] truncate">{keyHex.toUpperCase()}</p>
         </div>
       </div>
     </div>
