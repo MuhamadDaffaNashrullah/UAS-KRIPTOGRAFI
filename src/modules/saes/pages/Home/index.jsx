@@ -371,13 +371,7 @@ export default function Home() {
           alignItems: 'center', justifyContent: 'space-between', gap: 16,
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{
-              background: '#FF85C2', border: '2px solid #FF85C2',
-              width: 28, height: 28,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <span style={{ fontWeight: 900, fontSize: '0.75rem', color: '#1A1A2E' }}>CC</span>
-            </div>
+            <img src="/favicon.svg" alt="Logo" style={{ width: 28, height: 28, objectFit: 'contain' }} />
             <span style={{ fontWeight: 900, fontSize: '0.95rem', color: '#FFFFFF' }}>CIPHERCRAFT</span>
           </div>
           <p style={{ fontWeight: 700, fontSize: '0.8rem', color: '#94A3B8', textAlign: 'center' }}>

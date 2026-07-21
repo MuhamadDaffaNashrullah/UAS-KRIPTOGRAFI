@@ -7,6 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-on-surface-variant">
           {/* Logo + Copyright info */}
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <img src="/favicon.svg" alt="Logo" className="w-5 h-5 object-contain" />
             <span className="font-display font-bold text-[#894d0d] dark:text-accent-orange text-base">
               CIPHERCRAFT
             </span>

@@ -34,12 +34,7 @@ export default function Footer() {
             to="/"
             className="flex items-center gap-2 font-display font-black text-nb-text text-xl uppercase tracking-tight hover:opacity-80 transition-opacity self-start"
           >
-            <span
-              className="inline-flex items-center justify-center w-9 h-9 border-4 border-nb-text font-mono text-sm font-bold shadow-[2px_2px_0px_#00a3ff]"
-              style={{ background: '#00d2ff', color: '#080d19' }}
-            >
-              CC
-            </span>
+            <img src="/favicon.svg" alt="CIPHERCRAFT Logo" className="w-9 h-9 object-contain" />
             <span>CIPHERCRAFT</span>
           </Link>
           <p className="font-body text-sm text-white/70 max-w-sm leading-relaxed">

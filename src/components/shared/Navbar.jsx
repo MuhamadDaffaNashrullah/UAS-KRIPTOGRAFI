@@ -25,12 +25,7 @@ export default function Navbar({ accentColor = '#00d2ff', moduleLabel = null }) 
           to="/"
           className="flex items-center gap-2 font-display font-black text-nb-text text-base sm:text-lg uppercase tracking-tight hover:opacity-80 transition-opacity shrink-0"
         >
-          <span
-            className="inline-flex items-center justify-center w-8 h-8 border-4 border-nb-text font-mono text-xs font-bold"
-            style={{ background: '#00d2ff', color: '#080d19' }}
-          >
-            CC
-          </span>
+          <img src="/favicon.svg" alt="CIPHERCRAFT Logo" className="w-8 h-8 object-contain" />
           <span>CIPHERCRAFT</span>
           {moduleLabel && (
             <>

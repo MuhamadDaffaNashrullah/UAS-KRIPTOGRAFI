@@ -42,6 +42,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
+              <img src="/favicon.svg" alt="Logo" className="w-6 h-6 object-contain" />
               <motion.span
                 className="font-display text-xl font-bold text-on-surface group-hover:text-primary transition-colors"
                 whileHover={{ scale: 1.04 }}
