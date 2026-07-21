@@ -1,4 +1,4 @@
-# ⚡ CryptoFlow — Unified Symmetric Cryptography Simulator
+# ⚡ CIPHERCRAFT — Unified Symmetric Cryptography Simulator
 
 [![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
 [![React Version](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev)
@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
 [![State Management](https://img.shields.io/badge/State-Zustand-orange?style=for-the-badge)](https://github.com/pmndrs/zustand)
 
-**CryptoFlow** adalah sebuah aplikasi web simulator interaktif terpadu yang memvisualisasikan langkah-demi-langkah (step-by-step) proses enkripsi dan dekripsi dari empat algoritma kriptografi simetris populer: **DES (64-bit)**, **S-DES (8-bit)**, **AES-128 (128-bit)**, dan **S-AES (16-bit)**. 
+**CIPHERCRAFT** adalah sebuah aplikasi web simulator interaktif terpadu yang memvisualisasikan langkah-demi-langkah (step-by-step) proses enkripsi dan dekripsi dari empat algoritma kriptografi simetris populer: **DES (64-bit)**, **S-DES (8-bit)**, **AES-128 (128-bit)**, dan **S-AES (16-bit)**. 
 
 Aplikasi ini menggunakan filosofi desain **Neobrutalisme** yang memiliki kontras tinggi, warna tajam, garis tepi tebal, dan bayangan solid. Dirancang sebagai proyek tugas **UAS Kriptografi Semester 6**, platform ini memudahkan mahasiswa maupun praktisi memahami cara kerja internal block cipher secara bit-per-bit dan nibble-per-nibble.
 
@@ -59,7 +59,7 @@ UAS/
 │   │       ├── Navbar.jsx   # Menu navigasi dropdown neobrutalisme
 │   │       └── Footer.jsx   # Komponen kredit & footer sistem [NEW]
 │   ├── pages/
-│   │   └── Landing.jsx      # Halaman utama aplikasi (dashboard CryptoFlow)
+│   │   └── Landing.jsx      # Halaman utama aplikasi (dashboard CIPHERCRAFT)
 │   ├── modules/             # Modul-modul algoritma kriptografi
 │   │   ├── des/             # Modul DES
 │   │   │   ├── components/  # Komponen GUI simulasi DES
@@ -119,7 +119,7 @@ Aplikasi ini dikonfigurasi untuk berjalan 100% di cloud hosting **Vercel** tanpa
 ### Langkah 1: Hubungkan Repositori ke Vercel
 1. Masuk ke dashboard [Vercel](https://vercel.com) menggunakan Github/Gitlab Anda.
 2. Buat proyek baru dengan memilih tombol **"Add New"** -> **"Project"**.
-3. Cari dan impor repositori proyek **CryptoFlow** ini.
+3. Cari dan impor repositori proyek **CIPHERCRAFT** ini.
 4. Di bagian pengaturan konfigurasi build, setel nilai berikut:
    - **Framework Preset**: `Vite`
    - **Build Command**: `npm run build`
@@ -129,7 +129,7 @@ Aplikasi ini dikonfigurasi untuk berjalan 100% di cloud hosting **Vercel** tanpa
 
 ### Langkah 2: Tambahkan Domain Kustom `.my.id`
 1. Buka proyek Anda di dashboard Vercel, masuk ke **Settings** -> **Domains**.
-2. Masukkan alamat domain kustom Anda (misalnya `cryptoflow.my.id` atau `daffa.my.id`) dan klik **Add**.
+2. Masukkan alamat domain kustom Anda (misalnya `ciphercraft.my.id` atau `daffa.my.id`) dan klik **Add**.
 3. Vercel akan menampilkan status domain "Invalid Configuration" karena Anda harus mengarahkan DNS record domain Anda ke Vercel terlebih dahulu.
 
 ### Langkah 3: Konfigurasi DNS di Registrar Domain Anda

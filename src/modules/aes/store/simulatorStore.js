@@ -1,5 +1,5 @@
 /**
- * simulatorStore.js — Zustand store for AES-128 CipherFlow Simulator
+ * simulatorStore.js — Zustand store for AES-128 CIPHERCRAFT Simulator
  *
  * Architecture:
  *  - steps[]      : flat ordered list of {label, stateMatrix, phase} snapshots

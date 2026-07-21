@@ -43,7 +43,7 @@ const modules = [
   {
     path: '/saes',
     label: 'S-AES',
-    fullName: 'Simplified AES (CipherFlow)',
+    fullName: 'Simplified AES (CIPHERCRAFT)',
     bit: '16-bit',
     keyBit: '16-bit Key',
     rounds: '2 Rounds',
@@ -170,17 +170,17 @@ export default function Landing() {
 
           {/* Main Title */}
           <h1 className="font-display font-black text-5xl md:text-7xl uppercase leading-none tracking-tight mb-6 text-white text-center">
-            Crypto
+            CIPHER
             <br />
             <span
               className="border-b-8 border-nb-blue text-nb-blue"
               style={{ display: 'inline-block' }}
             >
-              Flow
+              CRAFT
             </span>
             <br />
             <span className="text-3xl md:text-5xl font-black text-white/35">
-              Unified Simulator
+              EXPLORE THE WORLD OF CIPHERS
             </span>
           </h1>
 

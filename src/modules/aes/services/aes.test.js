@@ -1,5 +1,5 @@
 /**
- * AES-128 CipherFlow Simulator — Test Harness
+ * AES-128 CIPHERCRAFT Simulator — Test Harness
  *
  * Test vector source: FIPS-197 Appendix B / C
  * https://csrc.nist.gov/publications/detail/fips/197/final

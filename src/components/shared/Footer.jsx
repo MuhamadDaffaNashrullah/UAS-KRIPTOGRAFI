@@ -38,9 +38,9 @@ export default function Footer() {
               className="inline-flex items-center justify-center w-9 h-9 border-4 border-nb-text font-mono text-sm font-bold shadow-[2px_2px_0px_#00a3ff]"
               style={{ background: '#00d2ff', color: '#080d19' }}
             >
-              CF
+              CC
             </span>
-            <span>CryptoFlow</span>
+            <span>CIPHERCRAFT</span>
           </Link>
           <p className="font-body text-sm text-white/70 max-w-sm leading-relaxed">
             Unified platform untuk visualisasi dan simulasi algoritma kriptografi simetris klasik dan modern secara detail (bit-by-bit).
@@ -113,7 +113,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t-2 border-nb-text bg-[#080d19] py-4">
         <div className="nb-container flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] text-white/40 text-center">
-          <p>&copy; {currentYear} CryptoFlow. Dikembangkan untuk keperluan edukasi dan perkuliahan.</p>
+          <p>&copy; {currentYear} CIPHERCRAFT. Dikembangkan untuk keperluan edukasi dan perkuliahan.</p>
           <div className="flex gap-4 font-bold">
             <span className="text-[#00d2ff]">Vercel Deploy</span>
             <span className="text-white/30">•</span>

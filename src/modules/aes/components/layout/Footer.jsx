@@ -8,11 +8,11 @@ export default function Footer() {
           {/* Logo + Copyright info */}
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
             <span className="font-display font-bold text-[#894d0d] dark:text-accent-orange text-base">
-              CipherFlow
+              CIPHERCRAFT
             </span>
             <span className="hidden sm:inline text-on-surface-variant/40">|</span>
             <span className="text-[11px] sm:text-xs">
-              © 2026 CipherFlow Academic. Project Pertemuan 13 - Advanced Encryption Standard (AES).
+              © 2026 CIPHERCRAFT Academic. Project Pertemuan 13 - Advanced Encryption Standard (AES).
             </span>
           </div>
 

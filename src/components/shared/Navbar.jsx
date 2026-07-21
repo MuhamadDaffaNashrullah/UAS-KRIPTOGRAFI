@@ -29,9 +29,9 @@ export default function Navbar({ accentColor = '#00d2ff', moduleLabel = null }) 
             className="inline-flex items-center justify-center w-8 h-8 border-4 border-nb-text font-mono text-xs font-bold"
             style={{ background: '#00d2ff', color: '#080d19' }}
           >
-            CF
+            CC
           </span>
-          <span>CryptoFlow</span>
+          <span>CIPHERCRAFT</span>
           {moduleLabel && (
             <>
               <span className="text-nb-text/40 font-normal">/</span>

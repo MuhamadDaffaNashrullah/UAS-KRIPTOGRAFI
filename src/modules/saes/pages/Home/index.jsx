@@ -376,9 +376,9 @@ export default function Home() {
               width: 28, height: 28,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
             }}>
-              <span style={{ fontWeight: 900, fontSize: '0.75rem', color: '#1A1A2E' }}>CF</span>
+              <span style={{ fontWeight: 900, fontSize: '0.75rem', color: '#1A1A2E' }}>CC</span>
             </div>
-            <span style={{ fontWeight: 900, fontSize: '0.95rem', color: '#FFFFFF' }}>CipherFlow</span>
+            <span style={{ fontWeight: 900, fontSize: '0.95rem', color: '#FFFFFF' }}>CIPHERCRAFT</span>
           </div>
           <p style={{ fontWeight: 700, fontSize: '0.8rem', color: '#94A3B8', textAlign: 'center' }}>
             Platform Visualisasi S-AES · Proyek Kriptografi Akademik

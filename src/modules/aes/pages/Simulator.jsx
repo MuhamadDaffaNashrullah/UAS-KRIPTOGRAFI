@@ -75,7 +75,7 @@ export default function Simulator() {
               </span>
             </div>
             <h1 className="font-display text-3xl md:text-4xl font-bold text-on-background">
-              AES-128 CipherFlow Simulator
+              AES-128 CIPHERCRAFT Simulator
             </h1>
             <p className="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               Konfigurasikan plaintext &amp; kunci rahasia, jalankan enkripsi atau dekripsi,

@@ -8,7 +8,7 @@ export default function CtaSection() {
       </h2>
       
       <p className="text-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto mb-10">
-        Bergabunglah dengan mahasiswa dan peneliti keamanan yang menggunakan CipherFlow untuk memahami 
+        Bergabunglah dengan mahasiswa dan peneliti keamanan yang menggunakan CIPHERCRAFT untuk memahami 
         arsitektur kriptografi modern.
       </p>
       
