@@ -1,8 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Background square (Vivid Cyan/Blue) -->
-  <rect width="64" height="64" fill="#00d2ff"/>
-  <!-- Dark Navy border -->
-  <rect x="2" y="2" width="60" height="60" fill="none" stroke="#080d19" stroke-width="4"/>
-  <!-- "CF" text -->
-  <text x="32" y="43" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#080d19">CF</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
+  <!-- Outer border -->
+  <polygon points="32,2 62,17 62,47 32,62 2,47 2,17" fill="#080d19" />
+  <!-- Top face (Teal/Cyan Diamond) -->
+  <polygon points="32.0,4.0 39.0,7.5 32.0,11.0 25.0,7.5" fill="#00d2ff" />
+  <polygon points="39.0,7.5 46.0,11.0 39.0,14.5 32.0,11.0" fill="#0df5e3" />
+  <polygon points="46.0,11.0 53.0,14.5 46.0,18.0 39.0,14.5" fill="#0df5e3" />
+  <polygon points="53.0,14.5 60.0,18.0 53.0,21.5 46.0,18.0" fill="#e6ffff" />
+  <polygon points="25.0,7.5 32.0,11.0 25.0,14.5 18.0,11.0" fill="#0df5e3" />
+  <polygon points="32.0,11.0 39.0,14.5 32.0,18.0 25.0,14.5" fill="#00a3ff" />
+  <polygon points="39.0,14.5 46.0,18.0 39.0,21.5 32.0,18.0" fill="#0df5e3" />
+  <polygon points="46.0,18.0 53.0,21.5 46.0,25.0 39.0,21.5" fill="#0df5e3" />
+  <polygon points="18.0,11.0 25.0,14.5 18.0,18.0 11.0,14.5" fill="#0df5e3" />
+  <polygon points="25.0,14.5 32.0,18.0 25.0,21.5 18.0,18.0" fill="#0df5e3" />
+  <polygon points="32.0,18.0 39.0,21.5 32.0,25.0 25.0,21.5" fill="#00a3ff" />
+  <polygon points="39.0,21.5 46.0,25.0 39.0,28.5 32.0,25.0" fill="#00d2ff" />
+  <polygon points="11.0,14.5 18.0,18.0 11.0,21.5 4.0,18.0" fill="#e6ffff" />
+  <polygon points="18.0,18.0 25.0,21.5 18.0,25.0 11.0,21.5" fill="#0df5e3" />
+  <polygon points="25.0,21.5 32.0,25.0 25.0,28.5 18.0,25.0" fill="#00d2ff" />
+  <polygon points="32.0,25.0 39.0,28.5 32.0,32.0 25.0,28.5" fill="#0df5e3" />
+  <!-- Left face (Electric Blue with C) -->
+  <polygon points="4.0,18.0 11.0,21.5 11.0,28.5 4.0,25.0" fill="#ffd166" />
+  <polygon points="4.0,25.0 11.0,28.5 11.0,35.5 4.0,32.0" fill="#ffbe0b" />
+  <polygon points="4.0,32.0 11.0,35.5 11.0,42.5 4.0,39.0" fill="#ffd166" />
+  <polygon points="4.0,39.0 11.0,42.5 11.0,49.5 4.0,46.0" fill="#ffbe0b" />
+  <polygon points="11.0,21.5 18.0,25.0 18.0,32.0 11.0,28.5" fill="#ffbe0b" />
+  <polygon points="11.0,28.5 18.0,32.0 18.0,39.0 11.0,35.5" fill="#0077b6" />
+  <polygon points="11.0,35.5 18.0,39.0 18.0,46.0 11.0,42.5" fill="#0077b6" />
+  <polygon points="11.0,42.5 18.0,46.0 18.0,53.0 11.0,49.5" fill="#ffd166" />
+  <polygon points="18.0,25.0 25.0,28.5 25.0,35.5 18.0,32.0" fill="#ffd166" />
+  <polygon points="18.0,32.0 25.0,35.5 25.0,42.5 18.0,39.0" fill="#0096c7" />
+  <polygon points="18.0,39.0 25.0,42.5 25.0,49.5 18.0,46.0" fill="#0096c7" />
+  <polygon points="18.0,46.0 25.0,49.5 25.0,56.5 18.0,53.0" fill="#ffbe0b" />
+  <polygon points="25.0,28.5 32.0,32.0 32.0,39.0 25.0,35.5" fill="#ffbe0b" />
+  <polygon points="25.0,35.5 32.0,39.0 32.0,46.0 25.0,42.5" fill="#00a3ff" />
+  <polygon points="25.0,42.5 32.0,46.0 32.0,53.0 25.0,49.5" fill="#00a3ff" />
+  <polygon points="25.0,49.5 32.0,53.0 32.0,60.0 25.0,56.5" fill="#ffd166" />
+  <!-- Right face (Darker Blue with C) -->
+  <polygon points="32.0,32.0 39.0,28.5 39.0,35.5 32.0,39.0" fill="#ffbe0b" />
+  <polygon points="32.0,39.0 39.0,35.5 39.0,42.5 32.0,46.0" fill="#d9a008" />
+  <polygon points="32.0,46.0 39.0,42.5 39.0,49.5 32.0,53.0" fill="#ffbe0b" />
+  <polygon points="32.0,53.0 39.0,49.5 39.0,56.5 32.0,60.0" fill="#d9a008" />
+  <polygon points="39.0,28.5 46.0,25.0 46.0,32.0 39.0,35.5" fill="#d9a008" />
+  <polygon points="39.0,35.5 46.0,32.0 46.0,39.0 39.0,42.5" fill="#2563eb" />
+  <polygon points="39.0,42.5 46.0,39.0 46.0,46.0 39.0,49.5" fill="#2563eb" />
+  <polygon points="39.0,49.5 46.0,46.0 46.0,53.0 39.0,56.5" fill="#ffbe0b" />
+  <polygon points="46.0,25.0 53.0,21.5 53.0,28.5 46.0,32.0" fill="#ffbe0b" />
+  <polygon points="46.0,32.0 53.0,28.5 53.0,35.5 46.0,39.0" fill="#1d4ed8" />
+  <polygon points="46.0,39.0 53.0,35.5 53.0,42.5 46.0,46.0" fill="#1d4ed8" />
+  <polygon points="46.0,46.0 53.0,42.5 53.0,49.5 46.0,53.0" fill="#d9a008" />
+  <polygon points="53.0,21.5 60.0,18.0 60.0,25.0 53.0,28.5" fill="#d9a008" />
+  <polygon points="53.0,28.5 60.0,25.0 60.0,32.0 53.0,35.5" fill="#3b82f6" />
+  <polygon points="53.0,35.5 60.0,32.0 60.0,39.0 53.0,42.5" fill="#3b82f6" />
+  <polygon points="53.0,42.5 60.0,39.0 60.0,46.0 53.0,49.5" fill="#ffbe0b" />
+  <!-- Inner seam lines -->
+  <line x1="32" y1="32" x2="32" y2="60" stroke="#080d19" stroke-width="2" />
+  <line x1="4" y1="18" x2="32" y2="32" stroke="#080d19" stroke-width="2" />
+  <line x1="60" y1="18" x2="32" y2="32" stroke="#080d19" stroke-width="2" />
 </svg>
